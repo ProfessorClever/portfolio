@@ -1,7 +1,15 @@
 "use client";
 
 import { useDisclosure } from "@mantine/hooks";
-import { AppShell, Burger, Group, NavLink, Title, Text } from "@mantine/core";
+import {
+  AppShell,
+  Burger,
+  Group,
+  NavLink,
+  Title,
+  Text,
+  UnstyledButton,
+} from "@mantine/core";
 import { ReactNode } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -18,7 +26,7 @@ function MyAppShell({ children }: Props) {
 
   return (
     <AppShell
-      header={{ height: 60 }}
+      header={{ height: 45 }}
       padding="md"
       navbar={{
         width: 300,
@@ -28,9 +36,11 @@ function MyAppShell({ children }: Props) {
     >
       <AppShell.Header withBorder={false}>
         <Group wrap="nowrap" justify="space-between" align="start">
-          <Title order={1} pl="sm" pt="5">
-            <IconUser strokeWidth={3} /> Marco Schaffer
-          </Title>
+          <UnstyledButton component={Link} href="/">
+            <Title order={1} pl="sm" pt="5">
+              <IconUser strokeWidth={3} /> P-Clever
+            </Title>
+          </UnstyledButton>
           <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="xl" />
           <Group
             wrap="nowrap"
@@ -40,7 +50,6 @@ function MyAppShell({ children }: Props) {
             pr="sm"
             pt="xs"
           >
-            <Nav labelProp="Home" linkProp="/" path={pathname} />
             <Nav labelProp="Timeline" linkProp="/timeline" path={pathname} />
             <Nav labelProp="Projects" linkProp="/projects" path={pathname} />
             <Nav labelProp="Hobbies" linkProp="/hobbies" path={pathname} />
