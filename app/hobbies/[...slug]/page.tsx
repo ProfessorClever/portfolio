@@ -55,7 +55,7 @@ const Page = ({ params: { slug } }: Props) => {
               continues his eternal vigilance. Mighty battlefleets cross the
               daemon-infested miasma of the Warp, the only route between distant
               stars, their way lit by the Astronomican, the psychic
-              manifestation of the Emperor's will.
+              manifestation of the Emperor`s will.
             </Text>
             <Text>
               Vast armies give battle in his name on uncounted worlds. Greatest
