@@ -8,9 +8,9 @@ const Layout = ({ children }: any) => {
   const pathname = usePathname();
   return (
     <Group wrap="nowrap" h="85vh" w="100%">
-      <Stack justify="start">
+      <Stack justify="start" visibleFrom="sm">
         <Title order={3}>Projects:</Title>
-        <ScrollArea h="70vh" type="always" offsetScrollbars visibleFrom="sm">
+        <ScrollArea h="70vh" type="always" offsetScrollbars>
           <Stack mr="10" justify="start">
             <Nav
               labelProp="Portfolio Website"

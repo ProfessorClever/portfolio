@@ -9,8 +9,8 @@ import {
 import MyAppShell from "@/components/AppShell";
 
 export const metadata = {
-  title: "My Mantine app",
-  description: "I have followed setup instructions carefully",
+  title: "P-Clever Portfolio",
+  description: "Learn about me!",
 };
 
 const myColor: MantineColorsTuple = [
